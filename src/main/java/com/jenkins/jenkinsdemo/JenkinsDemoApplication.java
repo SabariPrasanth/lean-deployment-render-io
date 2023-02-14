@@ -17,4 +17,8 @@ public class JenkinsDemoApplication {
 	public String sample(){
 		return "hello world sabari prasanth G!";
 	}
+	@GetMapping("/go/{name}")
+	public String enteryourName(String name){
+		return "hello "+name;
+	}
 }
